@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>测试webview内嵌url-schema和企业微信个人二维码</title>
+    <title>web-view</title>
     <style>
         * {
             margin: 0;
@@ -25,12 +25,35 @@
         .img {
             width: 100%;
         }
+
+        .test {
+            padding: 10px 0;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .test-q {
+            color: blue;
+        }
+
+        .test-a {
+            color: green;
+        }
     </style>
   </head>
   <body>
     <div class="div">
+      <div class="test">
+        <div class="test-q">1、测试web-view内嵌url-schema</div>
+        <div class="test-a">无法使用 - 缺失 打开小程序 按钮</div>
+        <div class="test-q">2、测试web-view内嵌企业微信个人二维码</div>
+        <div class="test-a">长按可以识别 - 可以加好友</div>
+        <div class="test-q">3、测试web-view内嵌小程序二维码</div>
+        <div class="test-a">长按可以识别 - 自家的也可以识别</div>
+      </div>
       <a class="a" href="https://wxaurl.cn/aWuxcayx7xq">https://wxaurl.cn/aWuxcayx7xq</a>
-      <img class="img" src="qr.jpg" alt="">
+      <img class="img" src="./qr1.png" alt="">
+      <img class="img" src="./qr2.jpg" alt="">
     </div>
   </body>
 </html>
